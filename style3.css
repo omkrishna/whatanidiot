@@ -44,7 +44,9 @@ opacity:0.8;
     position: relative;
   }
   .sidebar a {float: left;}
-  div.content {margin-left: 0;}
+  div.heading {margin-left: 0;}
+div.intro {margin-left: 0;}
+div.body-text {margin-left: 0;}
 }
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
