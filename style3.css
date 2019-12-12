@@ -62,7 +62,10 @@ font-family:Dosis;
 
 .logos{
 margin-left:300px;
-padding-left:25px;
+margin-left:10px;
+left:50%;
+position: absolute;
+
 
 }
 
