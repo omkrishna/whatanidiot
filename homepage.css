@@ -1,0 +1,66 @@
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  background-color: black;
+  color:white;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  text-align:center;
+  padding-top:10%
+}
+
+.sidebar a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display:block;
+  color: white;
+  opacity:0.5
+  padding: 16px;
+  text-decoration: none;
+  font-size:20px;
+  font-family:Rajdhani;
+}
+
+.sidebar a.active {
+  color: white;
+  opacity:0.8
+}
+
+.sidebar a:hover:not(.active) {
+  color: white;
+  opacity:0.5
+}
+
+div.content {
+  margin-left: 300px;
+  padding: 1px 16px;
+  height: 100%;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+
+img{
+border-radius:50%;
+border: 6px solid rgb(40,40,40);
+padding: 1px;
+}
