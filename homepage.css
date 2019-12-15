@@ -36,7 +36,7 @@
 
 .content {
   margin-left: 300px;
-  padding: 1px 16px;
+  padding-left:25px;
   height: 100%;
   padding-top:10%;
   color:gray;
@@ -68,7 +68,7 @@ font-family:Abel;
 .slideshow-container {
 text-align:left;
 font-size:20px;
-padding-top:5%;  
+padding-top:2%;  
 max-width: 100%;;
   position: relative;
   margin: auto;
@@ -117,7 +117,9 @@ font-family:Montserrat;
     position: fixed;
   }
   .sidebar a {float:left; padding-right:10px; font-size:14px;  }
-  div.content {margin-left: 0;}
+  div.content {margin-left: 0; padding-top:20%;padding-left:0;}
+  .heading{
+font-size:40px;}
   
   .sidebar img{
   display:none;
