@@ -1,6 +1,5 @@
 .sidebar {
   margin: 0px;
-  
   width: 300px;
   background-color: black;
   color:white;
@@ -45,22 +44,18 @@ border: 6px solid rgb(40,40,40);
 padding: 1px;
 }
 
-/* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
   .sidebar {
     width: 100%;
-    height: auto;
-    position: relative;
+    height:auto;
+    position: fixed;
   }
-  .sidebar a {float:left; padding-right:10px;}
+  .sidebar a {float:left; padding-right:10px; font-size:14px;  }
   div.content {margin-left: 0;}
   
-  img{
-  height:50px;
-  width:50px; 
-  float:left;
-  
-}
+  .sidebar img{
+  display:none;
+  }
   
 }
 
