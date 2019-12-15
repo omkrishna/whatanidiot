@@ -9,6 +9,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mansalva">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="icon" href="images/favicon.ico" type='image/x-icon'/>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script src="responsiveslides.min.js"></script>
 
@@ -20,17 +23,17 @@
 
 <div class="sidebar">
   <a href="#"><img src="images/om.jfif" alt="bird" height="150px" width="150px"></a>
-  <a class="active" href="#home">HOME</a>
-  <a href="#about">ABOUT</a>
-  <a href="#contact">CONTACT</a>
-  <a href="book-reviews.html">BOOK REVIEWS</a>
-  <a href="musings.html">MUSINGS</a>
+  <a class="active" class="nav" href="#home">HOME</a>
+  <a class="nav" href="#about">ABOUT</a>
+  <a class="nav" href="#contact">CONTACT</a>
+  <a  href="book-reviews.html">BOOK REVIEWS</a>
+  <a  href="musings.html">MUSINGS</a>
 </div>
 
-<div class="content">
+<div class="content" id="home">
 <span class="heading">WHAT AN <span class="black">IDIOT !</span></span>
 <div class="intro">
-OM KRISHNA. ND-08, ZANSKAR HOUSE, IIT DELHI-110016. (+91)8809041903.
+OM KRISHNA. ND-08, ZANSKAR HOUSE, IIT DELHI-110016. <span class="black"> OMKRISHNA.OK@GMAIL.COM.</span>
 </div>
 <hr>
 <div class="slideshow-container">
@@ -43,20 +46,43 @@ Mr. Prongs agrees with Mr. Moony, and would like to add that Professor Snape is 
 Mr. Padfoot would like to register his astonishment that an idiot like that ever became a professor.
 Mr. Wormtail bids Professor Snape good day, and advises him to wash his hair, the slimeball.
 </div>
-
-
 </div>
-<br>
-
 <div style="text-align:center">
   <span class="dot"></span> 
   <span class="dot"></span> 
   <span class="dot"></span> 
 </div>
+</div>
+
+
+<div class="content" id="about">
+<span class="heading-2">WHAT AN IDIOT <span class="black"> - ABOUT</span></span>
+<div class="intro">
+OM KRISHNA. ND-08, ZANSKAR HOUSE, IIT DELHI-110016.<span class="black"> OMKRISHNA.OK@GMAIL.COM.</span>
+</div>
+<hr>
+</div>
+
+
+<div class="content" id="contact">
+<span class="heading-2">WHAT AN IDIOT <span class="black"> - CONTACT</span></span>
+<div class="intro">
+OM KRISHNA. ND-08, ZANSKAR HOUSE, IIT DELHI-110016. <span class="black"> OMKRISHNA.OK@GMAIL.COM.</span>
+</div>
+<hr><br><br>
 
 </div>
 
 <script>
+
+$('.nav').click(function() {
+    var id = $(this).attr('id');
+    $('html, body').animate({
+        scrollTop: ($('#' + id + '.content').offset().top)
+    }, 1000);
+});
+
+
 var slideIndex = 0;
 showSlides();
 
@@ -76,6 +102,8 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 5000); 
 }
+
+
 </script>
 
 

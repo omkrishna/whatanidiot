@@ -1,3 +1,13 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 .sidebar {
   margin: 0px;
   width: 300px;
@@ -7,7 +17,7 @@
   height: 100%;
   overflow: auto;
   text-align:center;
-  padding-top:10%;
+  padding-top:7%;
   border-radius:15px;
 }
 
@@ -38,7 +48,7 @@
   margin-left: 300px;
   padding-left:25px;
   height: 100%;
-  padding-top:10%;
+  padding-top:7%;
   color:gray;
 }
 
@@ -53,12 +63,22 @@ font-size:80px;
 font-family:Mansalva;
 }
 
+.heading-2{
+font-size:50px; 
+font-family:Mansalva;
+}
+
 .black{
 color:black;
 }
 
 .intro{
 font-size:18px;
+font-family:Abel;
+}
+
+.text{
+font-size:22px;
 font-family:Abel;
 }
 
@@ -119,7 +139,7 @@ font-family:Montserrat;
   .sidebar a {float:left; padding-right:10px; font-size:14px;  }
   div.content {margin-left: 0; padding-top:20%;padding-left:0;}
   .heading{
-font-size:40px;}
+font-size:38px;}
   
   .sidebar img{
   display:none;
