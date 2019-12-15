@@ -1,16 +1,18 @@
 .sidebar {
   margin: 0px;
   width: 300px;
-  background-color: black;
+  background-color: rgb(20,20,20);
   color:white;
   position: fixed;
   height: 100%;
   overflow: auto;
   text-align:center;
-  padding-top:10%
+  padding-top:10%;
+  border-radius:15px;
 }
 
 .sidebar a {
+  background-color:rgb(20,20,20);
   padding-top: 8px;
   padding-bottom: 8px;
   display:block;
@@ -32,10 +34,12 @@
   opacity:0.5
 }
 
-div.content {
+.content {
   margin-left: 300px;
   padding: 1px 16px;
   height: 100%;
+  padding-top:10%;
+  color:gray;
 }
 
 img{
@@ -43,6 +47,68 @@ border-radius:50%;
 border: 6px solid rgb(40,40,40);
 padding: 1px;
 }
+
+.heading{
+font-size:80px; 
+font-family:Mansalva;
+}
+
+.black{
+color:black;
+}
+
+.intro{
+font-size:18px;
+font-family:Abel;
+}
+
+
+.mySlides {display: none;}
+
+.slideshow-container {
+text-align:left;
+font-size:20px;
+padding-top:5%;  
+max-width: 100%;;
+  position: relative;
+  margin: auto;
+font-family:Montserrat;
+}
+
+
+.dot {
+  height: 1px;
+  width: 1px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: .8}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
 
 @media screen and (max-width: 700px) {
   .sidebar {
