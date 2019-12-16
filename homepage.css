@@ -34,7 +34,6 @@ opacity:0.9;
 .sidebar a.active{
 color:white;
 opacity:1;
-font-size:24px;
 }
 
 .sidebar a:hover:not(.active){
@@ -54,24 +53,7 @@ border:6px solid rgb(255,255,255,0.2);
 padding:0px;
 }
 
-@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height:auto;
-    position: fixed;
-  }
-  .sidebar a {float:left; font-size:15px; padding:8px; }
-  div.content {margin-left: 0; padding-top:25%;padding-left:10px;}
-  .heading{
-font-size:35px;}
-.heading-2{
-font-size:28px;}
-  
-  .sidebar img{
-  display:none;
-  }
-  
-}
+
 
 .heading{
 font-size:80px;
@@ -119,4 +101,23 @@ font-family:Montserrat;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height:auto;
+    position: fixed;
+  }
+  .sidebar a {float:left; font-size:15px; padding:8px; }
+  div.content {margin-left: 0; padding-top:25%;padding-left:10px;}
+  .heading{
+font-size:35px;}
+.heading-2{
+font-size:28px;}
+  
+  .sidebar img{
+  display:none;
+  }
+  
 }

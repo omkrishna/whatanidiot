@@ -34,7 +34,6 @@ opacity:0.9;
 .sidebar a.active{
 color:white;
 opacity:1;
-font-size:24px;
 }
 
 .sidebar a:hover:not(.active){
@@ -65,24 +64,6 @@ padding:0px;
 float:left;
 }
 
-@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height:auto;
-    position: fixed;
-  }
-  .sidebar a {float:left; font-size:15px; padding:8px; }
-  div.content {margin-left: 0; padding-top:25%;padding-left:10px;}
-  .heading{
-font-size:35px;}
-.heading-2{
-font-size:28px;}
-  
-  .sidebar img{
-  display:none;
-  }
-  
-}
 
 .review{
 background-color:white;
@@ -150,6 +131,28 @@ margin-right:10px;
 }
 
 @media screen and (max-height: 450px) {
-  .content {padding-top: 15px;}
+  .content {padding-top: 10px;}
   .content a {font-size: 18px;}
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height:auto;
+    position: fixed;
+  }
+  .sidebar a {float:left; font-size:15px; padding:8px; }
+  .heading{
+display:none;
+}
+.sidebar img{
+  display:none;
+  }
+.review{
+margin-left:10px;
+margin-right:10px;
+margin-top:25px;
+} 
+
+
 }
