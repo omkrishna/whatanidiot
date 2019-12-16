@@ -1,0 +1,155 @@
+html{
+height:100%;
+}
+
+body{
+margin:0;
+padding:0;
+height:100%;
+}
+
+.sidebar{
+margin:0;
+width:100%;
+background-color:rgb(183,93,56);
+color:white;
+position:fixed;
+bottom:0;
+height:auto;
+overflow:hidden;
+text-align:right;
+border-radius:1px;
+}
+
+.sidebar a{
+display:inline-block;
+color:white;
+text-decoration:none;
+padding:12px;
+font-size:20px;
+font-family:Rajdhani;
+opacity:0.9;
+}
+
+.sidebar a.active{
+color:white;
+opacity:1;
+font-size:24px;
+}
+
+.sidebar a:hover:not(.active){
+opacity:0.5;
+}
+
+.heading{
+font-size:50px;
+font-family:Rubik;
+font-weight:600;
+color:black;
+padding-left:10px;
+float:left;
+background-color:white;
+border:1.5px solid rgb(183,93,56);
+}
+
+.color{
+color:rgb(183,93,56);
+}
+
+
+
+img{
+border-radius:50%;
+border:6px solid rgb(255,255,255,0.2);
+padding:0px;
+float:left;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height:auto;
+    position: fixed;
+  }
+  .sidebar a {float:left; font-size:15px; padding:8px; }
+  div.content {margin-left: 0; padding-top:25%;padding-left:10px;}
+  .heading{
+font-size:35px;}
+.heading-2{
+font-size:28px;}
+  
+  .sidebar img{
+  display:none;
+  }
+  
+}
+
+.review{
+background-color:white;
+color:rgb(183,93,56);
+text-align:left;
+border:2px solid rgb(183,93,56);
+border-radius:20px;
+padding-left:10px;
+padding-bottom:10px;
+margin-left:100px;
+margin-right:100px;
+margin-top:50px;
+font-family:Montserrat;
+margin-bottom:100px;
+}
+
+.text{
+font-size:22px;
+font-family:Montserrat;
+}
+
+.menu{
+font-size:20px;
+cursor:pointer;
+margin-top:5px;
+margin-right:10px;
+}
+
+
+.content {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(183,93,56,0.9);
+  color:white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.content a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+ 
+}
+
+.content a:hover {
+  color: white;
+  font-size:25px;
+}
+
+.content .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 40px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .content {padding-top: 15px;}
+  .content a {font-size: 18px;}
+}

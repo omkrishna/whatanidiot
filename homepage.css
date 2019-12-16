@@ -34,6 +34,7 @@ opacity:0.9;
 .sidebar a.active{
 color:white;
 opacity:1;
+font-size:24px;
 }
 
 .sidebar a:hover:not(.active){
