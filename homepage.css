@@ -59,7 +59,7 @@ padding:0px;
     height:auto;
     position: fixed;
   }
-  .sidebar a {float:left; padding-right:10px; font-size:14px;  }
+  .sidebar a {float:left; font-size:12px;  }
   div.content {margin-left: 0; padding-top:20%;padding-left:0;}
   .heading{
 font-size:38px;}
