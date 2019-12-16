@@ -60,11 +60,11 @@ padding:0px;
     position: fixed;
   }
   .sidebar a {float:left; font-size:15px; padding:8px; }
-  div.content {margin-left: 0; padding-top:25%;padding-left:25px;}
+  div.content {margin-left: 0; padding-top:25%;padding-left:10px;}
   .heading{
-font-size:38px;}
+font-size:35px;}
 .heading-2{
-font-size:30px;}
+font-size:28px;}
   
   .sidebar img{
   display:none;
