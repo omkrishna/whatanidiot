@@ -48,6 +48,13 @@ padding-top:10%;
 color:#868e96;
 }
 
+.content-less-padding{
+margin-left:280px;
+height:100%;
+padding-top:3%;
+color:#868e96;
+}
+
 img{
 border-radius:50%;
 border:6px solid rgb(255,255,255,0.2);
@@ -78,6 +85,13 @@ color:rgb(189,93,56);
 .intro{
 font-family:Abel;
 font-size:18px;
+}
+
+.about-text{
+font-family:Montserrat;
+font-size:20px;
+margin-right:30px;
+text-align:justify;
 }
 
 .contact-text{
@@ -163,7 +177,8 @@ font-family:Montserrat;
     position: fixed;
   }
   .sidebar a {float:left; font-size:15px; padding:8px; }
-  div.content {margin-left: 0; padding-top:25%;padding-left:10px;}
+  div.content {margin-left: 0; padding-top:22%;padding-left:10px;}
+div.content-less-padding {margin-left: 0; padding-top:22%;padding-left:10px;height:auto;}
   .heading{
 font-size:35px;}
 .heading-2{
